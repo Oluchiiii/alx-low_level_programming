@@ -1,45 +1,40 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
 /**
  * main - Prints numbers between 012 to 789.
  *
- * Return: Always 0 (Success)
+ * Return: 0 (Success)
  */
 
 int main(void)
 {
-	int i, e, g;
+	int d, p, q;
 
-	i = 48
-	e = 48
-	g = 48
-
-	while (e < 58)
+	for (d = '0'; d < '9'; d++)
 	{
-		i = 48
-		while (i < 58)
+		for (p = d + 1; p <= '9'; p++)
 		{
-			g = 48;
-			while (g < 58)
+			for (q = p + 1; q <= '9'; q++)
 			{
-				if (e != i && e != g && i != g && e < i && i < g)
+				if ((p != d) != q)
 				{
-					putchar(e);
-					putchar(i);
-					putchar(g);
-					if (i == 56 && e == 55 && g == 57)
-					{
-						break;
-					}
+					putchar(d);
+					putchar(p);
+					putchar(q);
+
+					if (d == '7' && p == '8')
+						continue;
+
 					putchar(',');
 					putchar(' ');
 				}
-				g++;
 			}
-			i++;
 		}
-		e++;
+
 	}
 	putchar('\n');
+
 	return (0);
 }
