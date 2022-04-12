@@ -7,7 +7,7 @@
  * Return: 0 (success)
  */
 
-int main(void)_
+int main(void)
 {
 	int i;
 	long int fibonacci[50], sum = 2;
