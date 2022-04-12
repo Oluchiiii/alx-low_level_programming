@@ -40,7 +40,7 @@ void print_times_table(int n)
 			}
 			if (b < n)
 			{
-				_putchar(o',');
+				_putchar(',');
 				_putchar(' ');
 			}
 		}
