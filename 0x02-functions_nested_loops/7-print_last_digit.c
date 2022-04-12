@@ -5,7 +5,7 @@
  *
  * @n: an entry character
  *
- * return: last digit of n
+ * Return: last digit of n
  */
 
 int print_last_digit(int n)
