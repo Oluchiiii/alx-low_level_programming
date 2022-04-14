@@ -14,15 +14,15 @@ int main(void)
 	{
 		if ((div % 3 == 0) && (div % 5 == ))
 		{
-			printf("FizzBuzz")
+			printf("FizzBuzz");
 		}
 		else if (div % 3 == 0)
 		{
-			printf("Fizz")
+			printf("Fizz");
 		}
 		else if (div % 5 == 0)
 		{
-			printf("Buzz")
+			printf("Buzz");
 		}
 		else
 		{
