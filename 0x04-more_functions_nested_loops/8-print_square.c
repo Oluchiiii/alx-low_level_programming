@@ -1,14 +1,14 @@
 #include "main.h"
 
 /**
- * print_square - Prints square
+ * print_square - prints square
  * @size: size of the square
- * Return: void
+ * Return: void.
  */
 
 void print_square(int size)
 {
-	int len, wild;
+	int len, wid;
 
 	for (len = 1; len <= size; len++)
 	{
