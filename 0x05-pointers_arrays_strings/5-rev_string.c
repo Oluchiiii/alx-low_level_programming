@@ -16,7 +16,7 @@ void rev_string(char *s)
 	for (i = 0, len = 0; s[i] != '\0'; ++i, ++len)
 		;
 
-	for (i = 0, i < len; ++i)
+	for (i = 0; i < len; ++i)
 	{
 		ptr[i] = s[i];
 	}
