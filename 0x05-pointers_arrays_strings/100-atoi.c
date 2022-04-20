@@ -35,7 +35,7 @@ int _atoi(char *s)
 		}
 		c++;
 	}
-	i *= j:
+	i *= j;
 
 		return (i);
 }
