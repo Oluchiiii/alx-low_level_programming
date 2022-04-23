@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * is_punc - checks for punctuation.
+ * is_punc - checks for punctuation
  *
  * @ch: char value passed
  *
@@ -10,7 +10,7 @@
 
 int is_punc(char ch)
 {
-	if (ch == '.' || ch == ',' || ch == ' ' || ch == '\t' || ch '\n')
+	if (ch == '.' || ch == ',' || ch == ' ' || ch == '\t' || ch == '\n')
 		return (1);
 	if (ch == '!' || ch == '?' || ch == ';')
 		return (1);
@@ -25,7 +25,7 @@ int is_punc(char ch)
  *
  * @str: input string
  *
- * Return: the changed string str
+ * Return: the changed string
  */
 
 char *cap_string(char *str)
