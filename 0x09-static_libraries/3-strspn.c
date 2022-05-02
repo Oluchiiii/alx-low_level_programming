@@ -1,32 +1,25 @@
 #include "main.h"
 
 /**
- * _strspn - gets the length of a prefix substring
+ * _strspn - prints buffer in hexa
+ * @s: buffer
+ * @accept: buffer2
  *
- * @s: initial segment
- * @accept: accepted bytes
- *
- * Return: the number of accepted bytes
+ * Return: Nothing.
  */
-
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int i, j, cmpt = 0;
+	unsigned int j, i;
 
-	for (i = 0; s[i] >= '\0'; i++)
+	for (j = 0; s[j] != '\0'; j++)
 	{
-		for (j = 0; accept[j] > '\0'; j++)
+		for (i = 0; accept[i] != '\0'; i++)
 		{
-			if (s[i] == accept[j])
-			{
-				cmpt++;
+			if (s[j] == accept[i])
 				break;
-			}
 		}
-		if (accept[j] == '\0')
-		{
+		if (!(accept[i]))
 			break;
-		}
 	}
-	return (cmpt);
+	return (j);
 }
