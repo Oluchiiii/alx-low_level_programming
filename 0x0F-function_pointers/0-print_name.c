@@ -1,22 +1,17 @@
 #include <stdio.h>
-#include "function_pointers.h"
 
 /**
- * print_name - prints a name as is
+ * print_name - prints a name
  *
- * @name: name of the person
- * @f: is pointer
+ * @name: name's main
+ * @f: void function
  *
- * Return: Nothing.
+ * Return: Nothing
  */
 
 void print_name(char *name, void (*f)(char *))
 {
-	if (name == NULL || f == NULL)
-	{
-		return;
-	}
-	else
+	if (name && f)
 	{
 		f(name);
 	}
