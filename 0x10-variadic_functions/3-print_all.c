@@ -2,12 +2,9 @@
 
 /**
  * print_all - prints anything
- *
- * @format: list of type of arguments passed to the function
- *
+ * @format: list of types of arguments passed to the function
  */
-
-void print_all(const char *i const format, ...)
+void print_all(const char * const format, ...)
 {
 	int i = 0;
 	char *str, *sep = "";
@@ -29,7 +26,7 @@ void print_all(const char *i const format, ...)
 					printf("%s%d", sep, va_arg(list, int));
 					break;
 				case 'f':
-					printf("%s%f", sep, va_arg(list, int));
+					printf("%s%f", sep, va_arg(list, double));
 					break;
 				case 's':
 					str = va_arg(list, char *);
