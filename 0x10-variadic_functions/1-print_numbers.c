@@ -1,12 +1,10 @@
-#include "Variadic_functions.h"
+#include "variadic_functions.h"
 
 /**
- * print_numbers - nts numbers given as parameters
- *
+ * print_numbers - prints numbers given as parameters
  * @separator: string to be printed between numbers
  * @n: number of integers passed to the function
  */
-
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
 	unsigned int i;
@@ -23,6 +21,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		else
 			printf("%s%d", separator, va_arg(list, int));
 	}
+
 	va_end(list);
 
 	printf("\n");
